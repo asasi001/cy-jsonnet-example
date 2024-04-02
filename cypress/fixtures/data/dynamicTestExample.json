@@ -1,0 +1,90 @@
+{
+   "testData": {
+      "negativeScenarios": {
+         "70b02ad6e1e444b93724f94ade952922": {
+            "payload": {
+               "firstName": "",
+               "lastName": "sdfsdfsdfsdf"
+            },
+            "scenario": "Verify person entity cannot be created with empty first name",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "70b02ad6e1e444b93724f94ade952922"
+         },
+         "81a2342d01a7f5c7f7838a96964184c9": {
+            "payload": {
+               "firstName": "sdfsdfsdfs",
+               "lastName": "dfhbsdfbsjdfnsd"
+            },
+            "scenario": "Verify person entity cannot be created with name longer than 20 characters",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "81a2342d01a7f5c7f7838a96964184c9"
+         },
+         "feb58c6237c6fea849ddcfbfe720ff62": {
+            "payload": {
+               "firstName": "sdfsdfsdfs",
+               "lastName": ""
+            },
+            "scenario": "Verify person entity cannot be created with empty last name",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "feb58c6237c6fea849ddcfbfe720ff62"
+         }
+      },
+      "positiveScenarios": {
+         "0be05132d522ef878254134c2fae66a2": {
+            "payload": {
+               "firstName": "sdfsdfsdfs",
+               "lastName": "sdfsdfsdfsdf"
+            },
+            "scenario": "Verify person entity can be created with empty address",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "0be05132d522ef878254134c2fae66a2"
+         },
+         "a287bb8234108016381d8636675e614a": {
+            "payload": {
+               "address": {
+                  "address1": "Dsfsdfsdfsd",
+                  "address2": "dsfsdfsdfsd",
+                  "country": "CANADA"
+               },
+               "firstName": "sdfsdfsdfs",
+               "lastName": "sdfsdfsdfsdf"
+            },
+            "scenario": "Verify person entity can be created with foreign address info",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "a287bb8234108016381d8636675e614a"
+         },
+         "a5c9380795cea335eb33d3965fb6cd6d": {
+            "payload": {
+               "address": {
+                  "address1": "dfsdfsdfsdfsd",
+                  "address2": "dsfsdfsdfsd",
+                  "country": "USA"
+               },
+               "firstName": "sdfsdfsdfs",
+               "lastName": "sdfsdfsdfsdf"
+            },
+            "scenario": "Verify person entity can be created with address info",
+            "tags": [
+               "regression",
+               "person"
+            ],
+            "testIdentifier": "a5c9380795cea335eb33d3965fb6cd6d"
+         }
+      }
+   }
+}

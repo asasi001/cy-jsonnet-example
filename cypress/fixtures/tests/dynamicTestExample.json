@@ -1,0 +1,62 @@
+{
+   "testDefinitions": {
+      "negativeScenarios": [
+         {
+            "scenario": "Verify person entity cannot be created with empty first name",
+            "tags": [
+               "regression",
+               "person",
+               "70b02ad6e1e444b93724f94ade952922"
+            ],
+            "testIdentifier": "70b02ad6e1e444b93724f94ade952922"
+         },
+         {
+            "scenario": "Verify person entity cannot be created with empty last name",
+            "tags": [
+               "regression",
+               "person",
+               "feb58c6237c6fea849ddcfbfe720ff62"
+            ],
+            "testIdentifier": "feb58c6237c6fea849ddcfbfe720ff62"
+         },
+         {
+            "scenario": "Verify person entity cannot be created with name longer than 20 characters",
+            "tags": [
+               "regression",
+               "person",
+               "81a2342d01a7f5c7f7838a96964184c9"
+            ],
+            "testIdentifier": "81a2342d01a7f5c7f7838a96964184c9"
+         }
+      ],
+      "positiveScenarios": [
+         {
+            "scenario": "Verify person entity can be created with empty address",
+            "tags": [
+               "regression",
+               "person",
+               "0be05132d522ef878254134c2fae66a2"
+            ],
+            "testIdentifier": "0be05132d522ef878254134c2fae66a2"
+         },
+         {
+            "scenario": "Verify person entity can be created with address info",
+            "tags": [
+               "regression",
+               "person",
+               "a5c9380795cea335eb33d3965fb6cd6d"
+            ],
+            "testIdentifier": "a5c9380795cea335eb33d3965fb6cd6d"
+         },
+         {
+            "scenario": "Verify person entity can be created with foreign address info",
+            "tags": [
+               "regression",
+               "person",
+               "a287bb8234108016381d8636675e614a"
+            ],
+            "testIdentifier": "a287bb8234108016381d8636675e614a"
+         }
+      ]
+   }
+}
